@@ -15,7 +15,8 @@ Avoid circular reference between Modules or groups of Modules.
 
 ### Solution
 
-When dealing with actions that receive or output Record/RecordLists with a large number of attributes consider using structures instead of entities for those records. Structures will narrow down the amount of data that flows through the entire system producing significant net benefits.
+You need to be very careful while creating references between modules. Circular references will create unwanted dependencies and technical debts for your application.
+Analyzing and planning the module components and actions can remove circular dependency for your module.
 
 ### Importance
 
